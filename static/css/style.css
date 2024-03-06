@@ -9,9 +9,10 @@ h2 {
     color: red;
 }
 
-table {
+table, th, td {
     border-color: orange;
-    border: 10px solid;
+    border-style: solid;
+    border-width: 3px;
 }
 
 #par3 {
