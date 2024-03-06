@@ -1,3 +1,5 @@
+
+/* editing paragraph style */
 p {
     text-align: left;
     color: black;
@@ -9,6 +11,7 @@ h2 {
     color: red;
 }
 
+/* define table boarder settings */
 table, th, td {
     border-color: orange;
     border-style: solid;
@@ -24,7 +27,7 @@ table, th, td {
     font-size: 16px;
     font-family: "Courier New";
 }
-
+/* defining image size */
 img.logo {
     width: 267px;
     length: 72px;
