@@ -20,6 +20,11 @@ login_manager.init_app(app)
 
 
 # create route for training page
+
+@app.route('/access-denied')
+def access_denied():
+    return render_template('access_denied.html')
+
 @app.route('/training')
 @login_required
 @role_required(['ADMIN', 'MANAGER'])
@@ -27,7 +32,7 @@ def training():
     if current_user.role in ['ADMIN', 'MANAGER']:
         return render_template('training.html')
     else:
-        flash(f'You are not authorized to access this page.','error')
+        flash('You are not authorized to access this page.', 'error')
         return redirect(url_for('access_denied'))
 
 
